@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MediacionDataSet2" targetNamespace="http://tempuri.org/MediacionDataSet2.xsd" xmlns:mstns="http://tempuri.org/MediacionDataSet2.xsd" xmlns="http://tempuri.org/MediacionDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="MediacionConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MediacionConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Mediacion.My.MySettings.GlobalReference.Default.MediacionConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MediacionTableAdapter" GeneratorDataComponentClassName="MediacionTableAdapter" Name="Mediacion" UserDataComponentName="MediacionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MediacionConnectionString (MySettings)" DbObjectName="Mediacion.dbo.Mediacion" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [Mediacion] DEFAULT VALUES</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        Folio_Mediacion
+FROM            Mediacion
+ORDER BY Folio_Mediacion</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Folio_Mediacion" DataSetColumn="Folio_Mediacion" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MediacionDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="MediacionDataSet2" msprop:Generator_DataSetName="MediacionDataSet2" msprop:EnableTableAdapterManager="True">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Mediacion" msprop:Generator_UserTableName="Mediacion" msprop:Generator_RowDeletedName="MediacionRowDeleted" msprop:Generator_RowChangedName="MediacionRowChanged" msprop:Generator_RowClassName="MediacionRow" msprop:Generator_RowChangingName="MediacionRowChanging" msprop:Generator_RowEvArgName="MediacionRowChangeEvent" msprop:Generator_RowEvHandlerName="MediacionRowChangeEventHandler" msprop:Generator_TableClassName="MediacionDataTable" msprop:Generator_TableVarName="tableMediacion" msprop:Generator_RowDeletingName="MediacionRowDeleting" msprop:Generator_TablePropName="Mediacion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Folio_Mediacion" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Folio_Mediacion" msprop:Generator_ColumnVarNameInTable="columnFolio_Mediacion" msprop:Generator_ColumnPropNameInRow="Folio_Mediacion" msprop:Generator_ColumnPropNameInTable="Folio_MediacionColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

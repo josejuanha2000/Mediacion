@@ -1,0 +1,166 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Mediacion
+</name>
+</assembly>
+<members>
+<member name="T:Mediacion.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:Mediacion.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:Mediacion.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:Mediacion.My.Resources.Resources.litigio">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Mediacion.My.Resources.Resources.Mediacion">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:Mediacion.MediacionDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Mediacion.MediacionDataSet.LitigioDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Mediacion.MediacionDataSet.LitigioRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Mediacion.MediacionDataSet.LitigioRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Mediacion.MediacionDataSetTableAdapters.LitigioTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Mediacion.MediacionDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Mediacion.MediacionDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Mediacion.MediacionDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Mediacion.MediacionDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Mediacion.MediacionDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Mediacion.MediacionDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Mediacion.MediacionDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Mediacion.MediacionDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Mediacion.MediacionDataSetTableAdapters.TableAdapterManager.UpdateAll(Mediacion.MediacionDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Mediacion.MediacionDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Mediacion.MediacionDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Mediacion.MediacionDataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Mediacion.MediacionDataSet1.MediacionDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Mediacion.MediacionDataSet1.MediacionRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Mediacion.MediacionDataSet1.MediacionRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Mediacion.MediacionDataSet1TableAdapters.MediacionTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Mediacion.MediacionDataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Mediacion.MediacionDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Mediacion.MediacionDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Mediacion.MediacionDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Mediacion.MediacionDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Mediacion.MediacionDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Mediacion.MediacionDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Mediacion.MediacionDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Mediacion.MediacionDataSet1TableAdapters.TableAdapterManager.UpdateAll(Mediacion.MediacionDataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Mediacion.MediacionDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Mediacion.MediacionDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MediacionDataSet" targetNamespace="http://tempuri.org/MediacionDataSet.xsd" xmlns:mstns="http://tempuri.org/MediacionDataSet.xsd" xmlns="http://tempuri.org/MediacionDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="MediacionConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MediacionConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Mediacion.My.MySettings.GlobalReference.Default.MediacionConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LitigioTableAdapter" GeneratorDataComponentClassName="LitigioTableAdapter" Name="Litigio" UserDataComponentName="LitigioTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MediacionConnectionString (MySettings)" DbObjectName="Mediacion.dbo.Litigio" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [Litigio] DEFAULT VALUES</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        Folio_Litigio
+FROM            Litigio
+ORDER BY Folio_Litigio</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Folio_Litigio" DataSetColumn="Folio_Litigio" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MediacionDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="MediacionDataSet" msprop:Generator_DataSetName="MediacionDataSet" msprop:EnableTableAdapterManager="True">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Litigio" msprop:Generator_UserTableName="Litigio" msprop:Generator_RowDeletedName="LitigioRowDeleted" msprop:Generator_RowChangedName="LitigioRowChanged" msprop:Generator_RowClassName="LitigioRow" msprop:Generator_RowChangingName="LitigioRowChanging" msprop:Generator_RowEvArgName="LitigioRowChangeEvent" msprop:Generator_RowEvHandlerName="LitigioRowChangeEventHandler" msprop:Generator_TableClassName="LitigioDataTable" msprop:Generator_TableVarName="tableLitigio" msprop:Generator_RowDeletingName="LitigioRowDeleting" msprop:Generator_TablePropName="Litigio">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Folio_Litigio" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Folio_Litigio" msprop:Generator_ColumnVarNameInTable="columnFolio_Litigio" msprop:Generator_ColumnPropNameInRow="Folio_Litigio" msprop:Generator_ColumnPropNameInTable="Folio_LitigioColumn" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9C6C7A57-383A-41DB-9327-7706CB445445}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Mediacion.My.MyApplication</StartupObject>
+    <RootNamespace>Mediacion</RootNamespace>
+    <AssemblyName>Mediacion</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>litigio.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Mediacion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Mediacion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft.NET\Primary Interop Assemblies\adodb.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ASM.Designer.vb">
+      <DependentUpon>ASM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ASM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CDC.Designer.vb">
+      <DependentUpon>CDC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CDC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CDM.Designer.vb">
+      <DependentUpon>CDM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CDM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CNCP.Designer.vb">
+      <DependentUpon>CNCP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CNCP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CNCPS.Designer.vb">
+      <DependentUpon>CNCPS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CNCPS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRCDM.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRCDM.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CR_LITIGIO.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_LITIGIO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CR_Mediacion.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CR_Mediacion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FOR-CDM.Designer.vb">
+      <DependentUpon>FOR-CDM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FOR-CDM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REP_MEDIACION.Designer.vb">
+      <DependentUpon>REP_MEDIACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REP_MEDIACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ISPM.Designer.vb">
+      <DependentUpon>ISPM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ISPM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediacionDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MediacionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MediacionDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MediacionDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MediacionDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MediacionDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_Mediacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_Mediacion.Designer.vb">
+      <DependentUpon>Menu_Mediacion.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Litigio.Designer.vb">
+      <DependentUpon>Litigio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Litigio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mediar.Designer.vb">
+      <DependentUpon>Mediar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mediar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="REP_LITIGIO.Designer.vb">
+      <DependentUpon>REP_LITIGIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REP_LITIGIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SM.Designer.vb">
+      <DependentUpon>SM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ASM.resx">
+      <DependentUpon>ASM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CDC.resx">
+      <DependentUpon>CDC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CDM.resx">
+      <DependentUpon>CDM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRCDM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRCDM.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_LITIGIO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_LITIGIO.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CR_Mediacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CR_Mediacion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOR-CDM.resx">
+      <DependentUpon>FOR-CDM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ISPM.resx">
+      <DependentUpon>ISPM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Mediacion.resx">
+      <DependentUpon>Menu_Mediacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Litigio.resx">
+      <DependentUpon>Litigio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mediar.resx">
+      <DependentUpon>Mediar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP_LITIGIO.resx">
+      <DependentUpon>REP_LITIGIO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REP_MEDIACION.resx">
+      <DependentUpon>REP_MEDIACION.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SM.resx">
+      <DependentUpon>SM.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\litigio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Imagenes\Mediacion.jpg" />
+    <None Include="MediacionDataSet.xsc">
+      <DependentUpon>MediacionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MediacionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MediacionDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MediacionDataSet.xss">
+      <DependentUpon>MediacionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MediacionDataSet1.xsc">
+      <DependentUpon>MediacionDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MediacionDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MediacionDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MediacionDataSet1.xss">
+      <DependentUpon>MediacionDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MediacionDataSet2.xsc">
+      <DependentUpon>MediacionDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MediacionDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MediacionDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MediacionDataSet2.xss">
+      <DependentUpon>MediacionDataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="litigio.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
